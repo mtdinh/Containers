@@ -16,19 +16,16 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
 * Strong security model
 * Ability to have immutable applications machine-agnostic
 * Ability to control isolation of containers and group processes
-* Ability to minimize time/space overhead for containers, allowing several simulaneous containers
+* Ability to minimize time/space overhead for containers, allowing several simulaneous containers and large workflows
 
-## List of Linux Containers
-List from wikipedia page
-* Docker
-* Linus-VServer
-* Imctfy (note: not actively developed since 2015)
-* LXC
-  * LXD
-* OpenVZ
-* Singularity
-* systemd-nspawn
-* Podman
-* Charliecloud
-* Kata containers
-* Bottlerocket
+## List of Container Hubs
+* Docker registries
+ * Docker Hub
+ * TreeScale
+* Gitlab
+* Nexus Repository Manager
+* Cloud Registry Options:
+ * Google Cloud Container Registry
+ * Azure Container Registry 
+* Jfrog Container Registry
+
