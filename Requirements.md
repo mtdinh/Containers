@@ -28,4 +28,4 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
  * Google Cloud Container Registry
  * Azure Container Registry 
 * Jfrog Container Registry
-
+* Github Container Registry (Beta)
