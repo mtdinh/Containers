@@ -1,4 +1,4 @@
-##Requirements
+## Requirements
 * Scalability (across Docker daemons)
 * Contains tools for managing multiple containers (Docker Compose)
   * Ability to cluster containers and treat as one entity
@@ -18,7 +18,7 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
 * Ability to control isolation of containers and group processes
 * Ability to minimize time/space overhead for containers, allowing several simulaneous containers
 
-##List of Linux Containers
+## List of Linux Containers
 List from wikipedia page
 * Docker
 * Linus-VServer
