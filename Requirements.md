@@ -96,4 +96,11 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
     * "secures artifacts with policies and role-based access control"
     * iamges are scanned for vulnerabilites
     * images are signed and validated
-#### Quay/Redhat
+#### Project Quay/Redhat
+* Major Features
+    * container vulnerability scanner - Clair
+         * provides real-time view of known vulnerabilies
+    * skopeo
+         * command line utility for various operations on container images and repositories
+         * does not need root access, nor active daemons  
+         * inspect repository for info
