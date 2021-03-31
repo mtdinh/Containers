@@ -77,11 +77,11 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
         * log system logs everything for file information
             * information for Rails controller requests received from GitLab, also contains performance data
             * all information about performed requests
-            *  requests made directly to API
-            *  events happening in instance such as user creation
-            *  changes to group/project settings/memberships
-            *  errors and failed requests from GitLab to Git repositories
-            *  info about background jobs
+            * requests made directly to API
+            * events happening in instance such as user creation
+            * changes to group/project settings/memberships
+            * errors and failed requests from GitLab to Git repositories
+            * info about background jobs
     * threaded discussions for issues, merge requests, and epics
     * shows history of changes to issues, etc. with filter by comments or history
     * issues can be labeled/categorized and weighted for priority
@@ -99,7 +99,7 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
 #### GoHarbor
 * Major Features
     * "secures artifacts with policies and role-based access control"
-    * iamges are scanned for vulnerabilites
+    * images are scanned for vulnerabilites
     * images are signed and validated
 #### Project Quay/Redhat
 * Major Features
