@@ -105,6 +105,7 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
 * Major Features
     * container vulnerability scanner - Clair
          * provides real-time view of known vulnerabilies
+         * https://github.com/quay/clair
     * skopeo
          * command line utility for various operations on container images and repositories
          * does not need root access, nor active daemons  
