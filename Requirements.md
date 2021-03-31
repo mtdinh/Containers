@@ -85,15 +85,15 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
  * threaded discussions for issues, merge requests, and epics
  * shows history of changes to issues, etc. with filter by comments or history
  * issues can be labeled/categorized and weighted for priority
-* Nexus Repository Manager
-* Cloud Registry Options:
- * Google Cloud Container Registry
- * Azure Container Registry 
-* Jfrog Container Registry
-* Github Container Registry (Beta)
+#### Nexus Repository Manager
+#### Cloud Registry Options:
+ ###### Google Cloud Container Registry
+ ###### Azure Container Registry 
+###### Jfrog Container Registry
+#### Github Container Registry (Beta)
 #### GoHarbor
 * Major Features
  * "secures artifacts with policies and role-based access control"
  * iamges are scanned for vulnerabilites
  * images are signed and validated
-* Quay/Redhat
+#### Quay/Redhat
