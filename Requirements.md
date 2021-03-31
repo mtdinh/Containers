@@ -75,13 +75,13 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
          * view all personal access tokens, SSH keys and GPG keys in your GitLab instance (as well as manage them and view metadata on them) 
     * access to server - complete control of server/instance, allows additional software for security, performance, etc.
         * log system logs everything for file information
-              * information for Rails controller requests received from GitLab, also contains performance data
-              * all information about performed requests
-              *  requests made directly to API
-              *  events happening in instance such as user creation
-              *  changes to group/project settings/memberships
-              *  errors and failed requests from GitLab to Git repositories
-              *  info about background jobs
+            * information for Rails controller requests received from GitLab, also contains performance data
+            * all information about performed requests
+            *  requests made directly to API
+            *  events happening in instance such as user creation
+            *  changes to group/project settings/memberships
+            *  errors and failed requests from GitLab to Git repositories
+            *  info about background jobs
     * threaded discussions for issues, merge requests, and epics
     * shows history of changes to issues, etc. with filter by comments or history
     * issues can be labeled/categorized and weighted for priority
