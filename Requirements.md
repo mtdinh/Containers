@@ -88,7 +88,12 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
 #### Nexus Repository Manager
 #### Cloud Registry Options:
  ###### Google Cloud Container Registry
- ###### Azure Container Registry 
+ * Major Features
+     * service perimeter - mitigates risk of unauthorized copying/transfer of data
+     * control movement of data across boundary 
+     * can encrypt container iamges using customer-managed encryption keys
+         * can temporarily/permanently disable access to encrypted container images by disabling or destroying the key 
+ ###### Azure Container Registry - based on Docker Registry 2.0
 ###### Jfrog Container Registry
 #### Github Container Registry (Beta)
 #### GoHarbor
@@ -104,3 +109,7 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
          * command line utility for various operations on container images and repositories
          * does not need root access, nor active daemons  
          * inspect repository for info
+         * copies images from various storage mechanisms (registries, storage backends)
+    * podmon
+         * daemonless container engine for developing, managing, and running OCI containers (Linux)
+         * containers can be run as root or rootless   
