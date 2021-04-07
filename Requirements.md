@@ -2,7 +2,7 @@
 * Scalability (across Docker daemons)
 * Contains tools for managing multiple containers (Docker Compose)
     * Ability to cluster containers and treat as one entity
-
+* Search through registries via image name, container ID, description, number of stars (rating), official or automated
 From "Building Containerized Environments for Reproducibiity and Traceability of Scientific Workflows" by Paula Fernanda Olaya
 * Ability to automatically annotate containers to create record trail within workflows
     * Ability to find/record workflow history to create a certain container using its id
@@ -19,7 +19,7 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
 * Ability to minimize time/space overhead for containers, allowing several simulaneous containers and large workflows
 
 ## List of Container Hubs
-#### Docker Hub
+#### Docker Hub - udocker (open source, same as Docker engine but without root privileges)
 * Major Features
     * multiplatform, layered file system
     * push and pull container images
@@ -42,6 +42,13 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
     * trigger actions after success push to repository to integrate Docker Hub with other services
         * "webhooks" - post requests sent to a URL defined in docker hub, HTTP call-back
         * can view webhook delivery and status of webhook payloads
+* Database interaction
+    * client <-> server architecture
+    * docker daemon (service on user OS) exposes REST API, allowing various tools to talk to the API
+        * REST API - application programming interface of REST architectural style with interaction with RESTful web services
+        * REST = representational state transfer
+        * client request -> transfers representation of the state of the resource to requester
+        * managed through HTTP/TCP/IP
 #### TreeScale
 * Major Features
     * multiplatform 
@@ -85,6 +92,9 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
     * threaded discussions for issues, merge requests, and epics
     * shows history of changes to issues, etc. with filter by comments or history
     * issues can be labeled/categorized and weighted for priority
+    * integrated web terminal for container debugging (if deploying to environment with service such as Kubernetes)
+    * container image cleanup plicies
+* Database interaction - REST API
 #### Nexus Repository Manager
 #### Cloud Registry Options:
  ###### Google Cloud Container Registry
@@ -96,6 +106,7 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
  ###### Azure Container Registry - based on Docker Registry 2.0
 ###### Jfrog Container Registry
 #### Github Container Registry (Beta)
+#### AWS ECR
 #### GoHarbor
 * Major Features
     * "secures artifacts with policies and role-based access control"
@@ -111,6 +122,5 @@ From "Building Containerized Environments for Reproducibiity and Traceability of
          * does not need root access, nor active daemons  
          * inspect repository for info
          * copies images from various storage mechanisms (registries, storage backends)
-    * podmon
-         * daemonless container engine for developing, managing, and running OCI containers (Linux)
-         * containers can be run as root or rootless   
+* Database interaction - SSL/TLS/TCP
+    * supports LDAP 
