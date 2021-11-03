@@ -52,7 +52,7 @@ type Container interface {
 	// ID identifies the container
 	ID() string
 	// Type identifies the container type: app or data
-	//TYPE() string
+	TYPE() string
 	// Info returns the underlying container record type
 	Info(context.Context, ...InfoOpts) (containers.Container, error)
 	// Delete removes the container
@@ -106,7 +106,7 @@ func (c *container) ID() string {
 	return c.id
 }
 
-func (c *container) Type() string {
+func (c *container) TYPE() string {
 	return c.containerType
 }
 

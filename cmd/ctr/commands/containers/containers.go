@@ -84,8 +84,6 @@ var createCommand = cli.Command{
 		}
 		if Type == "" {
 			return errors.Wrap(errdefs.ErrInvalidArgument, "container type must be provided")
-		} else {
-			fmt.Printf("%s", Type)
 		}
 
 		client, ctx, cancel, err := commands.NewClient(context)
