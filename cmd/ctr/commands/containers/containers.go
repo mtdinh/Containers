@@ -143,9 +143,9 @@ var listCommand = cli.Command{
 			}
 			if _, err := fmt.Fprintf(w, "%s\t%s\t%s\t%s\n",
 				c.ID(),
-				info.TYPE,
 				imageName,
 				info.Runtime.Name,
+				c.TYPE(),
 			); err != nil {
 				return err
 			}
