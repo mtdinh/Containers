@@ -91,7 +91,7 @@ var densityCommand = cli.Command{
 			default:
 				id := fmt.Sprintf("density-%d", i)
 
-				c, err := client.NewContainer(ctx, id,
+				c, err := client.NewContainer(ctx, id, "app",
 					containerd.WithSnapshotter(config.Snapshotter),
 					containerd.WithNewSnapshot(id, image),
 					containerd.WithNewSpec(

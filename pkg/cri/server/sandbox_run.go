@@ -208,7 +208,7 @@ func (c *criService) RunPodSandbox(ctx context.Context, r *runtime.RunPodSandbox
 		containerd.WithContainerExtension(sandboxMetadataExtension, &sandbox.Metadata),
 		containerd.WithRuntime(ociRuntime.Type, runtimeOpts)}
 
-	container, err := c.client.NewContainer(ctx, id, opts...)
+	container, err := c.client.NewContainer(ctx, id, "app", opts...)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to create containerd container")
 	}

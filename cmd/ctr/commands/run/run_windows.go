@@ -60,7 +60,7 @@ func NewContainer(ctx gocontext.Context, client *containerd.Client, context *cli
 		)
 
 		id = context.Args().Get(1)
-		Type = context.Args.Get(2)
+		Type = context.Args().Get(2)
 		snapshotter := context.String("snapshotter")
 		if snapshotter == "windows-lcow" {
 			opts = append(opts, oci.WithDefaultSpecForPlatform("linux/amd64"))
@@ -142,7 +142,7 @@ func NewContainer(ctx gocontext.Context, client *containerd.Client, context *cli
 
 	cOpts = append(cOpts, spec)
 
-	return client.NewContainer(ctx, id, Type,cOpts...)
+	return client.NewContainer(ctx, id, Type, cOpts...)
 }
 
 func getNewTaskOpts(_ *cli.Context) []containerd.NewTaskOpts {

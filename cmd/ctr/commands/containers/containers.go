@@ -83,8 +83,8 @@ var createCommand = cli.Command{
 			return errors.Wrap(errdefs.ErrInvalidArgument, "container id must be provided")
 		}
 		if Type == "" {
-                        return errors.Wrap(errdefs.ErrInvalidArgument, "container type must be provided")
-                }
+			return errors.Wrap(errdefs.ErrInvalidArgument, "container type must be provided")
+		}
 
 		client, ctx, cancel, err := commands.NewClient(context)
 		if err != nil {
@@ -143,7 +143,7 @@ var listCommand = cli.Command{
 			}
 			if _, err := fmt.Fprintf(w, "%s\t%s\t%s\t\n",
 				c.ID(),
-				
+
 				imageName,
 				info.Runtime.Name,
 			); err != nil {
