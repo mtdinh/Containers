@@ -141,9 +141,9 @@ var listCommand = cli.Command{
 			if imageName == "" {
 				imageName = "-"
 			}
-			if _, err := fmt.Fprintf(w, "%s\t%s\t%s\t\n",
+			if _, err := fmt.Fprintf(w, "%s\t%s\t%s\t%s\n",
 				c.ID(),
-
+				info.TYPE,
 				imageName,
 				info.Runtime.Name,
 			); err != nil {

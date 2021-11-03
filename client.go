@@ -276,8 +276,8 @@ func (c *Client) NewContainer(ctx context.Context, id string, cType string, opts
 	defer done(ctx)
 
 	container := containers.Container{
-		ID: id,
-		Type: cType,
+		ID:   id,
+		TYPE: cType,
 		Runtime: containers.RuntimeInfo{
 			Name: c.runtime,
 		},

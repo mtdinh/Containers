@@ -51,6 +51,8 @@ const (
 type Container interface {
 	// ID identifies the container
 	ID() string
+	// Type identifies the container type: app or data
+	//TYPE() string
 	// Info returns the underlying container record type
 	Info(context.Context, ...InfoOpts) (containers.Container, error)
 	// Delete removes the container
@@ -83,23 +85,29 @@ type Container interface {
 
 func containerFromRecord(client *Client, c containers.Container) *container {
 	return &container{
-		client:   client,
-		id:       c.ID,
-		metadata: c,
+		client:        client,
+		id:            c.ID,
+		containerType: c.TYPE,
+		metadata:      c,
 	}
 }
 
 var _ = (Container)(&container{})
 
 type container struct {
-	client   *Client
-	id       string
-	metadata containers.Container
+	client        *Client
+	id            string
+	containerType string
+	metadata      containers.Container
 }
 
 // ID returns the container's unique id
 func (c *container) ID() string {
 	return c.id
+}
+
+func (c *container) Type() string {
+	return c.containerType
 }
 
 func (c *container) Info(ctx context.Context, opts ...InfoOpts) (containers.Container, error) {

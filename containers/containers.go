@@ -33,10 +33,10 @@ type Container struct {
 	// This property is required and cannot be changed after creation.
 	ID string
 
-	// Container Type identifies the container for one of two types:
+	// Container TYPE identifies the container for one of two types:
 	// Application or Data
 	// This property is required
-	Type string
+	TYPE string
 
 	// Labels provide metadata extension for a container.
 	//
